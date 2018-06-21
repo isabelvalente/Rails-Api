@@ -8,3 +8,7 @@
 5.times do
   Country.create(country_name: Faker::Address.country, continent: Faker::LordOfTheRings.location, population: Faker::Number.number(7), language: Faker::ProgrammingLanguage.name, world_cup: Faker::Boolean.boolean)
 end
+10.times do
+  random_id = rand(1..Country.all.length)
+  Actor.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, nickname: Faker::StarWars.character, age: Faker::Number.between(13, 86), country_id: random_id)
+end
