@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+5.times do
+  Country.create(country_name: Faker::Address.country, continent: Faker::LordOfTheRings.location, population: Faker::Number.number(7), language: Faker::ProgrammingLanguage.name, world_cup: Faker::Boolean.boolean)
+end

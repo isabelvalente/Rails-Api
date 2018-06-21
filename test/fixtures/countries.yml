@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  country_name: MyString
+  continent: MyString
+  population: 1
+  language: MyString
+  world_cup: false
+
+two:
+  country_name: MyString
+  continent: MyString
+  population: 1
+  language: MyString
+  world_cup: false
